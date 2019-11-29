@@ -5,7 +5,7 @@ data class Post (
     val author: String,
     val content: String,
     val created: Long = System.currentTimeMillis()/1000,
-    val type: PostType = PostType.POST,
+    val postType: PostType = PostType.POST,
     val source: Post? = null,
     val address: String? = null,
     val location: Pair<Double, Double>? = null,
